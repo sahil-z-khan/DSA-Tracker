@@ -1,0 +1,84 @@
+@startuml
+' ========== THEME SETTINGS ==========
+!theme plain
+title "Data Structures & Algorithms Learning Roadmap"
+
+skinparam backgroundColor #F8F9FA
+skinparam defaultFontColor #2E2E2E
+skinparam defaultFontName "Segoe UI"
+skinparam rectangle {
+  BackgroundColor #E8EEF2
+  BorderColor #A0A7AD
+  RoundCorner 15
+  Shadowing false
+}
+skinparam note {
+  BackgroundColor #FFF4E1
+  BorderColor #E0B86B
+  FontColor #3B3B3B
+}
+skinparam activity {
+  BackgroundColor #D7E3FC
+  BorderColor #7D9EC0
+  FontColor #1C1C1C
+}
+skinparam start {
+  BackgroundColor #AAC7A7
+  BorderColor #799C79
+}
+skinparam end {
+  BackgroundColor #E09F9F
+  BorderColor #B46A6A
+}
+
+' ========== FLOW ==========
+start
+
+' ---- Core Foundations ----
+fork
+:Arrays & Strings;
+note right: Foundation for Prefix Sum,\nSliding Window, Two Pointers
+fork again
+:Linked Lists;
+note right: In-place traversal,\nFast & Slow Pointers
+fork again
+:Stacks & Queues;
+note right: Monotonic Stack,\nBacktracking, BFS
+end fork
+
+' ---- Intermediate ----
+fork
+:Heaps (Priority Queues);
+note right: Top K Elements,\nMerging Intervals
+fork again
+:HashMaps / HashSets;
+note right: Used for Prefix Sum,\nSliding Window, and DP (Memoization)
+fork again
+:Sorting Algorithms;
+note right: Essential for Intervals,\nBinary Search, and Optimization
+end fork
+
+' ---- Hierarchical Structures ----
+fork
+:Trees & BSTs;
+note right: DFS, Modified Binary Search,\nRecursion Practice
+fork again
+:Graphs;
+note right: BFS, DFS,\nShortest Path Problems
+fork again
+:2D Arrays / Matrices;
+note right: Matrix Traversal,\nIsland & Pathfinding Problems
+end fork
+
+' ---- Advanced Patterns ----
+:Recursion & Backtracking;
+note right: Foundation for DFS,\nCombinations, Permutations
+
+:Dynamic Programming;
+note right: Builds on Recursion,\nOverlapping Subproblems and Memoization
+
+:Algorithmic Pattern Integration;
+note right: Combine all concepts to\nsolve complex problems efficiently
+
+stop
+@enduml
